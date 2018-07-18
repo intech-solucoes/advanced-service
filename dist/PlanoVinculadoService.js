@@ -28,6 +28,11 @@ var PlanoVinculadoService = function (_BaseService) {
         value: function Buscar() {
             return this.CriarRequisicao("GET", "/planoVinculado");
         }
+    }, {
+        key: "BuscarPorPlano",
+        value: function BuscarPorPlano(plano) {
+            return this.CriarRequisicao("GET", "/planoVinculado/porPlano/" + plano);
+        }
     }]);
 
     return PlanoVinculadoService;

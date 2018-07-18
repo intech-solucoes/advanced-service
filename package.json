@@ -1,6 +1,7 @@
 {
   "name": "advanced-service",
   "version": "0.0.1",
+  "main": "index.js",
   "module": "dist/index.js",
   "repository": "https://github.com/intech-solucoes/advanced-service.git",
   "author": "Rony Moura <ronymmoura@gmail.com>",

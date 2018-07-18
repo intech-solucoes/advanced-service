@@ -5,4 +5,8 @@ export default class PlanoVinculadoService extends BaseService {
         return this.CriarRequisicao("GET", "/planoVinculado");
     }
 
+    BuscarPorPlano(plano) {
+        return this.CriarRequisicao("GET", `/planoVinculado/porPlano/${plano}`);
+    }
+
 }
