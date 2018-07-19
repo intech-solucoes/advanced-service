@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.VersaoService = exports.SaldoService = exports.IndiceService = exports.SalarioContribuicaoService = exports.DadosPessoaisService = exports.ContribuicaoService = exports.ContrachequeService = exports.PlanoVinculadoService = exports.UsuarioService = undefined;
+exports.VersaoService = exports.SimuladorService = exports.SaldoService = exports.IndiceService = exports.SalarioContribuicaoService = exports.DadosPessoaisService = exports.ContribuicaoService = exports.ContrachequeService = exports.PlanoVinculadoService = exports.UsuarioService = undefined;
 
 var _UsuarioService = require("./UsuarioService");
 
@@ -37,6 +37,10 @@ var _SaldoService = require("./SaldoService");
 
 var _SaldoService2 = _interopRequireDefault(_SaldoService);
 
+var _SimuladorService = require("./SimuladorService");
+
+var _SimuladorService2 = _interopRequireDefault(_SimuladorService);
+
 var _VersaoService = require("./VersaoService");
 
 var _VersaoService2 = _interopRequireDefault(_VersaoService);
@@ -51,4 +55,5 @@ exports.DadosPessoaisService = _DadosPessoaisService2.default;
 exports.SalarioContribuicaoService = _SalarioContribuicao2.default;
 exports.IndiceService = _IndiceService2.default;
 exports.SaldoService = _SaldoService2.default;
+exports.SimuladorService = _SimuladorService2.default;
 exports.VersaoService = _VersaoService2.default;
