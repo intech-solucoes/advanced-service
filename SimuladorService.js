@@ -1,23 +1,23 @@
 import { BaseService } from "react-lib"
 
 export default class SimuladorService extends BaseService {
-    BuscarDadosSimuladorBD(plano) {
-        return this.CriarRequisicao("GET", `/simuladorBD/${plano}`);
+    BuscarDadosSimuladorBD() {
+        return this.CriarRequisicao("GET", `/simuladorBD`);
     }
 
-    SimularBD(plano) {
-        return this.CriarRequisicao("GET", `/simuladorBD/${plano}/simular`);
+    SimularBD() {
+        return this.CriarRequisicao("GET", `/simuladorBD/simular`);
     }
 
-    BuscarDadosSimuladorCD(plano) {
-        return this.CriarRequisicao("GET", `/simuladorCD/${plano}`);
+    BuscarDadosSimuladorCD() {
+        return this.CriarRequisicao("GET", `/simuladorCD`);
     }
 
-    BuscarDadosSimuladorCDPasso2(plano) {
-        return this.CriarRequisicao("GET", `/simuladorCD/${plano}/passo2`);
+    BuscarDadosSimuladorCDPasso2() {
+        return this.CriarRequisicao("GET", `/simuladorCD/passo2`);
     }
 
-    SimularCD(plano, contribBasica, contribFacultativa, idadeAposentadoria) {
-        return this.CriarRequisicao("POST", `/simuladorCD/${plano}/simular`, { contribBasica, contribFacultativa, idadeAposentadoria });
+    SimularCD(contribBasica, contribFacultativa, idadeAposentadoria, saque) {
+        return this.CriarRequisicao("POST", `/simuladorCD/simular`, { contribBasica, contribFacultativa, idadeAposentadoria, saque });
     }
 }

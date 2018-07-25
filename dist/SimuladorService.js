@@ -25,28 +25,28 @@ var SimuladorService = function (_BaseService) {
 
     _createClass(SimuladorService, [{
         key: "BuscarDadosSimuladorBD",
-        value: function BuscarDadosSimuladorBD(plano) {
-            return this.CriarRequisicao("GET", "/simuladorBD/" + plano);
+        value: function BuscarDadosSimuladorBD() {
+            return this.CriarRequisicao("GET", "/simuladorBD");
         }
     }, {
         key: "SimularBD",
-        value: function SimularBD(plano) {
-            return this.CriarRequisicao("GET", "/simuladorBD/" + plano + "/simular");
+        value: function SimularBD() {
+            return this.CriarRequisicao("GET", "/simuladorBD/simular");
         }
     }, {
         key: "BuscarDadosSimuladorCD",
-        value: function BuscarDadosSimuladorCD(plano) {
-            return this.CriarRequisicao("GET", "/simuladorCD/" + plano);
+        value: function BuscarDadosSimuladorCD() {
+            return this.CriarRequisicao("GET", "/simuladorCD");
         }
     }, {
         key: "BuscarDadosSimuladorCDPasso2",
-        value: function BuscarDadosSimuladorCDPasso2(plano) {
-            return this.CriarRequisicao("GET", "/simuladorCD/" + plano + "/passo2");
+        value: function BuscarDadosSimuladorCDPasso2() {
+            return this.CriarRequisicao("GET", "/simuladorCD/passo2");
         }
     }, {
         key: "SimularCD",
-        value: function SimularCD(plano, contribBasica, contribFacultativa, idadeAposentadoria) {
-            return this.CriarRequisicao("POST", "/simuladorCD/" + plano + "/simular", { contribBasica: contribBasica, contribFacultativa: contribFacultativa, idadeAposentadoria: idadeAposentadoria });
+        value: function SimularCD(contribBasica, contribFacultativa, idadeAposentadoria, saque) {
+            return this.CriarRequisicao("POST", "/simuladorCD/simular", { contribBasica: contribBasica, contribFacultativa: contribFacultativa, idadeAposentadoria: idadeAposentadoria, saque: saque });
         }
     }]);
 
