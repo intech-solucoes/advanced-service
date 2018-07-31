@@ -8,6 +8,7 @@ import IndiceService from "./IndiceService";
 import SaldoService from "./SaldoService";
 import SimuladorService from "./SimuladorService";
 import VersaoService from "./VersaoService";
+import RelacionamentoService from "./RelacionamentoService";
 
 export {
     UsuarioService,
@@ -19,5 +20,6 @@ export {
     IndiceService,
     SaldoService,
     SimuladorService,
-    VersaoService
+    VersaoService,
+    RelacionamentoService
 };
