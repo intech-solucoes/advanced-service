@@ -1,4 +1,4 @@
-import { BaseService } from "react-lib"
+import { BaseService } from "@intechprev/react-lib"
 
 export default class DadosPessoaisService extends BaseService {
     Buscar() {

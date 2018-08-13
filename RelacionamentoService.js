@@ -1,4 +1,4 @@
-import { BaseService } from "react-lib"
+import { BaseService } from "@intechprev/react-lib"
 
 export default class RelacionamentoService extends BaseService {
     Enviar(email, assunto, mensagem) {

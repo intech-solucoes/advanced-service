@@ -1,8 +1,21 @@
 {
-	"name": "advanced-service",
+	"name": "@intechprev/advanced-service",
 	"version": "0.0.1",
 	"main": "index.js",
-	"repository": "https://github.com/intech-solucoes/advanced-service.git",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/intech-solucoes/advanced-service.git"
+	},
 	"author": "Rony Moura <ronymmoura@gmail.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"description": "",
+	"bugs": {
+		"url": "https://github.com/intech-solucoes/advanced-service/issues"
+	},
+	"homepage": "https://github.com/intech-solucoes/advanced-service#readme",
+	"dependencies": {},
+	"devDependencies": {},
+	"scripts": {
+		"publish": "npm publish --access public"
+	}
 }
