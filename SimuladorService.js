@@ -20,4 +20,11 @@ export default class SimuladorService extends BaseService {
     SimularCD(contribBasica, contribFacultativa, idadeAposentadoria, saque) {
         return this.CriarRequisicao("POST", `/simuladorCD/simular`, { contribBasica, contribFacultativa, idadeAposentadoria, saque });
     }
+
+    SimularNaoParticipante(contribBasica, contribFacultativa, idadeAposentadoria, saque, dataNascimento, nascimentoConjugue, 
+        nascimentoFilhoInvalido, nascimentoFilhoMaisNovo, taxaJuros) {
+        return this.CriarRequisicao("POST", `/simuladorCD/simularNaoParticipante`, { contribBasica, contribFacultativa, 
+            idadeAposentadoria, saque, dataNascimento, nascimentoConjugue, nascimentoFilhoInvalido, nascimentoFilhoMaisNovo, taxaJuros });
+    }
+
 }
