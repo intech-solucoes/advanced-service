@@ -1,4 +1,4 @@
-import { BaseService } from "@intechprev/react-lib"
+import BaseService from "@intechprev/service";
 
 export default class ContribuicaoService extends BaseService {
     BuscarPorPlano(plano) {

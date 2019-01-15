@@ -1,6 +1,6 @@
 {
 	"name": "@intechprev/advanced-service",
-	"version": "0.0.3",
+	"version": "0.0.7",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
@@ -13,7 +13,9 @@
 		"url": "https://github.com/intech-solucoes/advanced-service/issues"
 	},
 	"homepage": "https://github.com/intech-solucoes/advanced-service#readme",
-	"dependencies": {},
+	"dependencies": {
+		"@intechprev/service": "^1.0.2"
+	},
 	"devDependencies": {},
 	"scripts": {
 		"publish:npm": "npm publish --access public"
