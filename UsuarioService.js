@@ -2,10 +2,14 @@ import BaseService from "@intechprev/service";
 
 export default class UsuarioService extends BaseService {
     Buscar(versao = null) {
-        return this.CriarRequisicao("GET", this.MontarRota("usuario", versao));
+        return this.CriarRequisicao("GET", "/usuario");
     }
 
-    Login(cpf, senha, versao = null) {
-        return this.CriarRequisicao("POST", this.MontarRota("usuario", versao, "login"), { Cpf: cpf, Senha: senha });
+    Login(cpf, senha) {
+        return this.CriarRequisicao("POST", "/usuario/login", { Cpf: cpf, Senha: senha });
+    }
+
+    LoginV2(cpf, senha) {
+        return this.CriarRequisicao("POST", "/usuario/v2/login", { Cpf: cpf, Senha: senha });
     }
 }
