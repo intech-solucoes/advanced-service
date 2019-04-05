@@ -21,10 +21,13 @@ export default class SimuladorService extends BaseService {
         return this.CriarRequisicao("POST", `/simuladorCD/simular`, { contribBasica, contribFacultativa, idadeAposentadoria, saque });
     }
 
-    SimularNaoParticipante(contribBasica, contribFacultativa, aporteInicial, idadeAposentadoria, saque, dataNascimento, sexo, nascimentoConjugue, 
-        nascimentoFilhoInvalido, sexoFilhoInvalido, nascimentoFilhoMaisNovo, sexoFilhoMaisNovo, taxaJuros) {
-        return this.CriarRequisicao("POST", `/simuladorCD/simularNaoParticipante`, { contribBasica, contribFacultativa, aporteInicial,
-            idadeAposentadoria, saque, dataNascimento, sexo, nascimentoConjugue, nascimentoFilhoInvalido, sexoFilhoInvalido, nascimentoFilhoMaisNovo, sexoFilhoMaisNovo, taxaJuros });
+    SimularNaoParticipante(Nome, Email, ContribBasica, ContribFacultativa, AporteInicial, IdadeAposentadoria, Saque, DataNascimento, Sexo, NascimentoConjugue, 
+        NascimentoFilhoInvalido, SexoFilhoInvalido, NascimentoFilhoMaisNovo, SexoFilhoMaisNovo, TaxaJuros) {
+        return this.CriarRequisicao("POST", `/simuladorCD/simularNaoParticipante`, { Nome, Email, ContribBasica, ContribFacultativa, AporteInicial,
+            IdadeAposentadoria, Saque, DataNascimento, Sexo, NascimentoConjugue, NascimentoFilhoInvalido, SexoFilhoInvalido, NascimentoFilhoMaisNovo, SexoFilhoMaisNovo, TaxaJuros });
     }
 
+    Aderir(nome, email) {
+        return this.CriarRequisicao("POST", `/simuladorCD/aderir`, { nome, email });
+    }
 }
