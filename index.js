@@ -10,6 +10,7 @@ import SimuladorService from "./SimuladorService";
 import VersaoService from "./VersaoService";
 import RelacionamentoService from "./RelacionamentoService";
 import NoticiaService from "./NoticiaService";
+import CalendarioService from "./CalendarioService";
 
 export {
     UsuarioService,
@@ -23,5 +24,6 @@ export {
     SimuladorService,
     VersaoService,
     RelacionamentoService,
-    NoticiaService
+    NoticiaService,
+    CalendarioService
 };
