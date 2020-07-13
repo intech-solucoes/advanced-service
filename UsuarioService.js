@@ -12,4 +12,12 @@ export default class UsuarioService extends BaseService {
     LoginV2(cpf, senha) {
         return this.CriarRequisicao("POST", "/usuario/v2/login", { Cpf: cpf, Senha: senha });
     }
+
+    BuscarMatriculas() {
+        return this.CriarRequisicao("GET", "/usuario/buscarMatriculas");
+    }
+
+    SelecionarMatricula(matricula) {
+        return this.CriarRequisicao("GET", `/usuario/selecionarMatricula/${matricula}`)
+    }
 }
