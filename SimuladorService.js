@@ -9,16 +9,16 @@ export default class SimuladorService extends BaseService {
         return this.CriarRequisicao("GET", `/simuladorBD/simular`);
     }
 
-    BuscarDadosSimuladorCD() {
-        return this.CriarRequisicao("GET", `/simuladorCD`);
+    BuscarDadosSimuladorCD(sqPlanoPrevidencial) {
+        return this.CriarRequisicao("GET", `/simuladorCD/${sqPlanoPrevidencial}`);
     }
 
-    BuscarDadosSimuladorCDPasso2() {
-        return this.CriarRequisicao("GET", `/simuladorCD/passo2`);
+    BuscarDadosSimuladorCDPasso2(sqPlanoPrevidencial) {
+        return this.CriarRequisicao("GET", `/simuladorCD/passo2/${sqPlanoPrevidencial}`);
     }
 
-    SimularCD(contribBasica, contribFacultativa, idadeAposentadoria, saque) {
-        return this.CriarRequisicao("POST", `/simuladorCD/simular`, { contribBasica, contribFacultativa, idadeAposentadoria, saque });
+    SimularCD(sqPlanoPrevidencial, contribBasica, contribFacultativa, idadeAposentadoria, saque) {
+        return this.CriarRequisicao("POST", `/simuladorCD/simular/${sqPlanoPrevidencial}`, { contribBasica, contribFacultativa, idadeAposentadoria, saque });
     }
 
     SimularNaoParticipante(Nome, Email, ContribBasica, ContribFacultativa, AporteInicial, IdadeAposentadoria, Saque, DataNascimento, Sexo, NascimentoConjugue, 

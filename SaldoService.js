@@ -5,7 +5,7 @@ export default class SaldoService extends BaseService {
         return this.CriarRequisicao("GET", `/saldo/saldoBD/`);
     }
 
-    BuscarSaldoCD() {
-        return this.CriarRequisicao("GET", `/saldo/saldoCD/`);
+    BuscarSaldoCD(sqPlanoPrevidencial) {
+        return this.CriarRequisicao("GET", `/saldo/saldoCD/${sqPlanoPrevidencial}`);
     }
 }
