@@ -9,6 +9,10 @@ export default class SimuladorService extends BaseService {
         return this.CriarRequisicao("GET", `/simuladorBD/simular`);
     }
 
+    SimularSaldado() {
+        return this.CriarRequisicao("GET", `/simuladorSaldado/simular`);
+    }
+
     BuscarDadosSimuladorCD(sqPlanoPrevidencial) {
         return this.CriarRequisicao("GET", `/simuladorCD/${sqPlanoPrevidencial}`);
     }
